@@ -1,0 +1,62 @@
+*{
+    --color-primario: rgb(236,240,241);
+    --color-secundario: rgb(23,32,42);
+    --color-terciario: rgb(241,196,15);
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-size: 4em;
+    color: var(--color-secundario);
+    text-shadow: 
+    -2px -2px 0 var(--color-primario),  /* Sombra superior izquierda */
+    2px -2px 0 var(--color-primario),   /* Sombra superior derecha */
+    -2px 2px 0 var(--color-primario),   /* Sombra inferior izquierda */
+    2px 2px 0 var(--color-primario);    /* Sombra inferior derecha */
+    margin: 0px;
+    padding-top: 10vw;
+}
+
+.encabezado{
+    background: no-repeat  center/100% url(imagenes/construccion.jpeg) ;
+    color: #fff;
+    text-align: center;
+    height: 30vw;
+
+    nav{
+        margin: 0 30%;
+    }
+
+    nav > ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+        list-style: none;
+
+        li > a {
+            color: var(--color-primario);
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+    }
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button img {
+    display: block;
+}

@@ -20,6 +20,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 header h1{
@@ -42,6 +43,8 @@ nav ul li a {
     transition: color 0.5s;
     padding: 0 10px;
     border-radius: 20px;
+    transition: all 2s cubic-bezier(0.25, 0.1, 0.25, 1); 
+    
 }
 
 nav ul li a:hover {
@@ -75,20 +78,22 @@ header {
 
 #services{
     background-color: var(--color-primario);
-    padding: 20px;
+    padding: 10px 0 20px 0;
     text-align: center;
 }
 
 #services h2{
     color: var(--color-secundario);
     font-size: 2em;
+    margin-top: 2vh;
     margin-bottom: 20px;
 
 }
 
 .contenedor{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     gap: 20px;
 }
@@ -108,6 +113,7 @@ header {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    aspect-ratio: 1/1;
 }
 
 .recuadro span{
@@ -120,32 +126,6 @@ header {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-
 .recuadro span {
     font-size: 1.1em;
     color: #555;
@@ -154,10 +134,7 @@ header {
 .recuadro:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-} */
-
-
-
+} 
 
 
 .whatsapp-button {
@@ -174,3 +151,27 @@ header {
 .whatsapp-button img {
     display: block;
 }
+
+footer{
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    height: 60vh;
+    text-align: start;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+
+    section{
+        flex-basis: 350px;
+
+        iframe{
+            aspect-ratio: 13/9;
+            height: 100%;
+        }
+    }
+    
+   
+}
+

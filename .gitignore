@@ -1,0 +1,16 @@
+# Ignorar archivos con las siguientes extensiones
+*.log
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+*.thumbs
+*.class
+*.pyc
+*.pyo
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib

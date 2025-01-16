@@ -65,7 +65,7 @@ section:not(footer section){
 }
 
 .encabezado {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat center/100% url(imagenes/construccion.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat 80% url(imagenes/construccion.jpeg);
     color: var(--color-primario);
     background-attachment: fixed;
     text-align: left;

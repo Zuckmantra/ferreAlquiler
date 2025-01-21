@@ -1,7 +1,7 @@
 const elements = document.querySelector('#menu');
-const barra = document.querySelector('#desplegable');
+const barra = document.querySelector('#desplegar');
 console.log(barra);
 
-elements.addEventListener('click', () =>{
-    elements.classList.toggle('nav-on');
+elements.addEventListener('touchend', () =>{
+    barra.classList.toggle('nav-on');
 })

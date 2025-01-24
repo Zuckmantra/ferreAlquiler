@@ -234,6 +234,23 @@ footer{
         box-sizing: border-box;
     }
 
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        height: 60px;
+    }
+
+    .nav-on{
+        display: inline;
+        transition: all 0.5s;
+    }
+
     nav {
         display: none;
         ul{

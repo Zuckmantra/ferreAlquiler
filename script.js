@@ -8,5 +8,4 @@ if (menu && barra) {
 
     menu.addEventListener('click', toggleNav);
     menu.addEventListener('touchstart', toggleNav);
-    menu.addEventListener('touchend', toggleNav);
 }

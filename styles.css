@@ -14,8 +14,7 @@ html{
 body{
     font-family: 'Manrope', sans-serif;
     margin: 0;
-    padding: 0;
-    padding-top: 60px;
+    padding: 0px;
 }
 
 /*Header o encabezado*/
@@ -29,7 +28,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
     height: 60px; 
 }
 
@@ -69,7 +68,7 @@ nav ul li a:hover {
 
 
 .encabezado {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat 80% url(imagenes/construccion.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat 80% url(imagenes/construccion.jpeg);
     color: var(--color-primario);
     background-attachment: fixed;
     text-align: left;
@@ -230,7 +229,6 @@ footer{
 }
 
 
-
 @media (width <= 800px) {
     *{
         box-sizing: border-box;
@@ -248,12 +246,13 @@ footer{
         height: 60px;
     }
 
+    .nav-on{
+        display: inline;
+        transition: all 0.5s;
+    }
+
     nav {
         display: none;
-        position: absolute;
-        left: 0;
-        top: 40px;
-        
         ul{
             background-color: var(--color-primario);
             position: absolute;
@@ -273,11 +272,12 @@ footer{
     }
 
     input{
-        display: flex;
+        display:inline-flex;
         appearance: none;
         background-color: var(--color-primario);
         width: 3em;
         height: 3em;
+        align-items: center;
         justify-content: center;
         cursor: pointer;
 
@@ -293,12 +293,10 @@ footer{
             }
         }
     }
-
-    #menu:checked ~ nav{
-        display: block;
-    }    
+    
     
     .encabezado {
+        padding: 0 auto;
         
         h2{
             font-size: 2em;
